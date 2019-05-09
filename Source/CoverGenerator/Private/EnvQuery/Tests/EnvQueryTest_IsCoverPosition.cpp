@@ -35,7 +35,6 @@ void UEnvQueryTest_IsCoverPosition::RunTest(FEnvQueryInstance& QueryInstance) co
 	}
 
 	FCollisionQueryParams TraceParams(TEXT("EnvQueryTrace"), TraceData.bTraceComplex);
-	TraceParams.bTraceAsyncScene = true;
 
 	TArray<AActor*> IgnoredActors;
 	if (QueryInstance.PrepareContext(Context, IgnoredActors))

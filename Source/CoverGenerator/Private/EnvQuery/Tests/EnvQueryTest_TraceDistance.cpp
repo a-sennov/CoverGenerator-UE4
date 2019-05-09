@@ -36,7 +36,6 @@ void UEnvQueryTest_TraceDistance::RunTest(FEnvQueryInstance& QueryInstance) cons
 	}
 
 	FCollisionQueryParams TraceParams(TEXT("EnvQueryTrace"), TraceData.bTraceComplex);
-	TraceParams.bTraceAsyncScene = true;
 
 	TArray<AActor*> IgnoredActors;
 	if (QueryInstance.PrepareContext(Context, IgnoredActors))
